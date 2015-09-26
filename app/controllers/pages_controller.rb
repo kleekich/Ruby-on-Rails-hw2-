@@ -5,19 +5,19 @@ class PagesController < ApplicationController
   end
 
   def stringify
-=begin
+    
+
+    
     if params[:name] != nil && params[:adjective] != nil
       @text = params[:name]  
       @text << " is so "
       @text << params[:adjective]
     else 
-=end
-    @text = "You are nothing!"
-    
+      @text = "You are nothing!"
+    end
     render "stringified"
-    
   end
-
+  
 
   def age
   end
