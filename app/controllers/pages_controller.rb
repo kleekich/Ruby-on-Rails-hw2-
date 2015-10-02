@@ -10,9 +10,14 @@ class PagesController < ApplicationController
   
 
   def age
+  
   end
 
   def person
+    p = Person.new(params[:name], params[:age])
+    @introduction = p.introduce
+    @birthYear = p.birth_year
+    @nickname = p.nickname
     
   end
 

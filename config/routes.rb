@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   
   root 'pages#home'
   put 'age', to: 'pages#person'
-  post 'stringify', to: 'pages#stringify', as: 'stringify'
-  post 'person', to: 'pages#person'
+  post 'stringify', to: 'pages#stringify'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

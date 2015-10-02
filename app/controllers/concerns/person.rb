@@ -7,11 +7,11 @@ class Person
 	end
 
 	def introduce
-		@intro = "My name is " << name << " and I am " << age.to_s << " year old."
+		"My name is " << @name << " and I am " << @age.to_s << " year old."
 	end
 
 	def birth_year
-		@by = (2015-@age).to_s
+		2015-@age.to_i
 	end
 
 	def nickname
