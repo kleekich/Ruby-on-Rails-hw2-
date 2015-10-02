@@ -1,4 +1,10 @@
 <h1>Stringified Page!</h1>
+<ruby>
+<%if params[:name] == "" && params[:adjective] == ""%>
+	<% @text = "You are nothing!"%>
+<%else%>
+	<%@text = params[:name] << " is so " << params[:adjective]%>
+<%end%>
 
 <%= @text %>
 
